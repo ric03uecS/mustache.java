@@ -6,7 +6,6 @@ before_install:
 install:
   - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 env:
-  - lscpu | grep CPU
   - _system_arch=x86_64 _system_version=12.04 _system_type=Linux _system_name=Ubuntu LC_CTYPE=en_US.UTF-8
 script:
   - mvn test -B
