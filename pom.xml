@@ -9,6 +9,9 @@
 
   
   <modules>
+    <module>compiler</module>
+    <module>codegen</module>
+    <module>indy</module>
     <module>handlebar</module>
     <module>mustache-maven-plugin</module>
     <module>scala-extensions</module>
