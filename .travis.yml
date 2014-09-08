@@ -3,6 +3,8 @@ language: java
 before_install:
   - env
   
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 env:
   - _system_arch=x86_64 _system_version=12.04 _system_type=Linux _system_name=Ubuntu
 script:
